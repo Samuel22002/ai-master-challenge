@@ -1,0 +1,56 @@
+claim_id,claim,expected_text_from_final_numbers,required_in,found_in,status
+C01,churn_flag accounts,110,README;EXEC,README;EXEC,VERIFIED
+C02,accounts with churn event,352,README;EXEC,README;EXEC,VERIFIED
+C03,accounts with subscription end,312,README;EXEC,README;EXEC,VERIFIED
+C04,accounts with zero active records,| **0** |,EXEC,EXEC,VERIFIED
+C05,overlap flag∩event,flag ∩ evento = 75,README;EXEC,README;EXEC,VERIFIED
+C06,overlap flag∩end,flag ∩ encerramento = 72,README;EXEC,README;EXEC,VERIFIED
+C07,overlap event∩end,evento ∩ encerramento = 227,README;EXEC,README;EXEC,VERIFIED
+C08,all three,nas três = 50,README;EXEC,README;EXEC,VERIFIED
+C09,V1 MRR proxy,2.073.153,README;EXEC,README;EXEC,VERIFIED
+C10,V1 share,"20,4%",README;EXEC,README;EXEC,VERIFIED
+C11,V1 flagged with zero active MRR = 0 (100% paying),110 (100% das flagged),README,README,VERIFIED
+C12,V2 MRR proxy,2.781.650,README;EXEC,README;EXEC,VERIFIED
+C13,V2 share,"27,4%",README;EXEC,README;EXEC,VERIFIED
+C14,V3 accounts,388 contas · 764 registros,README,README,VERIFIED
+C15,V3 exposed MRR proxy,2.023.778,README;EXEC;LAB,README;EXEC;LAB,VERIFIED
+C16,V3 share,"19,9%",README;EXEC,README;EXEC,VERIFIED
+C17,any non-auto accounts (incl. zero MRR),409,README;EXEC,README;EXEC,VERIFIED
+C18,trial-only accounts,21 possuem somente exposições,README;EXEC,README;EXEC,VERIFIED
+C19,V3-W1 exposed,873.996,README;EXEC,README;EXEC,VERIFIED
+C20,V3-W1 share of V3,"43,2%",README;EXEC,README;EXEC,VERIFIED
+C21,V3-W1 records,50 contas · 137 registros,README,README,VERIFIED
+C22,wave 1 union,176 contas únicas,EXEC,EXEC,VERIFIED
+C23,wave 1 not naive sum,Não são 210,EXEC,EXEC,VERIFIED
+C24,overlaps V1∩V2 / V1∩W1 / V2∩W1 / triple,"V1∩V2 = 9, V1∩V3-W1 = 11, V2∩V3-W1 = 17, nas três = 3",README;EXEC,README;EXEC,VERIFIED
+C25,scenario 5%,101.189,README;EXEC,README;EXEC,VERIFIED
+C26,scenario 10%,202.378,README;EXEC,README;EXEC,VERIFIED
+C27,scenario 15%,303.567,README;EXEC,README;EXEC,VERIFIED
+C28,scenario annualized 5/10/15,"1.214.267, 2.428.534 ou 3.642.800",EXEC,EXEC,VERIFIED
+C29,pilot population,314 contas,README;EXEC;APPX,README;EXEC;APPX,VERIFIED
+C30,pilot per arm,157 por braço,README;EXEC,README;EXEC,VERIFIED
+C31,pilot exposed,1.045.553,APPX,APPX,VERIFIED
+C32,MDE 10/15/20,"~7,4, 9,4 ou 11,0",EXEC,EXEC,VERIFIED
+C33,Enterprise any active record,474/500,README,README,VERIFIED
+C34,Enterprise active record MRR>0,461 com MRR proxy > 0,README,README,VERIFIED
+C35,Enterprise share,"74,3%",README,README,VERIFIED
+C36,P(end) by plan p,"p = 0,888",README,README,VERIFIED
+C37,ended 2024 reference,1.127.644,EXEC,EXEC,VERIFIED
+C38,ended 2024 right-after share,"98,7%",EXEC,EXEC,VERIFIED
+C39,usage segments declining,15 de 15 segmentos,EXEC,EXEC,VERIFIED
+C40,usage segment range,−40% a −77%,README;EXEC,README;EXEC,VERIFIED
+C41,usage quarterly total range,30.789–32.227,README;EXEC,README;EXEC,VERIFIED
+C42,usage coverage (pt-BR format),"22,27%",README;APPX,README;APPX,VERIFIED
+C42b,"usage coverage label (English format, Truth Lab spec)",22.27%,LAB,LAB,VERIFIED
+C43,CSAT missing,"41,25%",README;EXEC,README;EXEC,VERIFIED
+C44,health score readiness,0 GREEN · 2 PARTIAL · 8 RED,README;APPX;LAB,README;APPX;LAB,VERIFIED
+C45,top10 / top20 / top50 concentration,"top 10 contas = 8,4%",README,README,VERIFIED
+C46-1,observed rate DevTools,"31,0%",README;APPX,README;APPX,VERIFIED
+C46-2,observed rate event,"30,2%",README;APPX,README;APPX,VERIFIED
+C46-3,observed rate 2023H1,"26,6%",README;APPX,README;APPX,VERIFIED
+C46-4,observed rate trial,"25,8%",README;APPX,README;APPX,VERIFIED
+C46-5,observed rate 6-15,"24,6%",README;APPX,README;APPX,VERIFIED
+C47,overall churn_flag rate,"22,0%",README;EXEC;APPX,README;EXEC;APPX,VERIFIED
+C48,minimum dimension q,"q = 0,28",README;EXEC,README;EXEC,VERIFIED
+C49,dimensions with p<0.05,"Dimensões com p < 0,05 | **0**",APPX,APPX,VERIFIED
+C50,DevTools CI,"23,2%–40,0%",README,README,VERIFIED

@@ -1,0 +1,26 @@
+{
+  "analysis_id": "INDEPENDENT-AUDIT-01",
+  "seed": 20261004,
+  "null_simulations": 1000,
+  "link_simulations": 200,
+  "observation_end": "2024-12-31",
+  "tests_in_scan": 89,
+  "scan_p_lt_05": 0,
+  "scan_q_lt_10": 0,
+  "scan_pvalues_ks_vs_uniform_p": 0.03158480314052503,
+  "outputs": [
+    "account_activity_timeline_summary.csv",
+    "account_outcome_definitions.csv",
+    "end_probability_by_attribute.csv",
+    "expected_ends_under_generator.csv",
+    "generator_fit.csv",
+    "independence_scan.csv",
+    "internal_coherence.csv",
+    "lifecycle_links_vs_chance.csv",
+    "power_mde.csv",
+    "q4_null_calibration.csv",
+    "q4_null_draws.csv",
+    "raw_inventory.csv",
+    "telemetry_classes.csv"
+  ]
+}

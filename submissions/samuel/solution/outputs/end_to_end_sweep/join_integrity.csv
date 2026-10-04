@@ -1,0 +1,6 @@
+join,child_rows,child_rows_matched,distinct_parents_reached,row_multiplication
+subscriptions -> accounts,5000,5000,500,0
+feature_usage -> subscriptions,25000,25000,4967,0
+feature_usage -> subscriptions -> accounts,25000,25000,500,0
+support_tickets -> accounts,2000,2000,492,0
+churn_events -> accounts,600,600,352,0

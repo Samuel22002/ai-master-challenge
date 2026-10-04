@@ -1,0 +1,8 @@
+field,generator_hypothesis,ks_statistic,ks_p_value,decile_counts,verdict
+subscriptions.start_date,"signup + U(0,1) x (obs_end - signup)",0.015785609397944156,0.1641750558885381,"[499, 485, 517, 480, 469, 490, 504, 508, 510, 532]",CONSISTENT
+subscriptions.end_date,"start + U(0,1) x (obs_end - start), for ~9.7% of records",0.04421423171423167,0.29519368266288293,"[44, 53, 61, 44, 37, 59, 39, 42, 49, 53]",CONSISTENT
+churn_events.churn_date,"signup + U(0,1) x (obs_end - signup)",0.022272727272727333,0.9206126442962441,"[58, 62, 60, 59, 62, 61, 51, 60, 67, 60]",CONSISTENT
+feature_usage.usage_date,"U(2023-01-01, 2024-12-31), independent of subscription/account dates",0.005289863013698659,0.4845756845743253,"[2561, 2520, 2549, 2401, 2399, 2556, 2489, 2437, 2552, 2536]",CONSISTENT
+support_tickets.submitted_at,"U(2023-01-01, 2024-12-31), independent of subscription/account dates",0.018226027397260314,0.5138953922668699,"[177, 210, 205, 208, 191, 200, 202, 179, 206, 222]",CONSISTENT
+subscriptions per account,records assigned to accounts at random (multinomial),1.0701402805611222,0.13479705397577021,dispersion index (var/mean) in ks_statistic; chi2 GOF p in ks_p_value,CONSISTENT
+subscriptions.mrr_amount,seats x fixed price per plan; trial = 0,,,Basic: 19-19/seat; Enterprise: 199-199/seat; Pro: 49-49/seat,DETERMINISTIC

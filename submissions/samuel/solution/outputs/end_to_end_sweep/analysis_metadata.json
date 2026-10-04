@@ -1,0 +1,27 @@
+{
+  "analysis_id": "ANALYSIS-14",
+  "seed": 20261004,
+  "outputs": [
+    "account_master.csv",
+    "column_profile.csv",
+    "event_reason_profile.csv",
+    "event_reason_x_feedback.csv",
+    "event_sequence_profile.csv",
+    "event_timing_checks.csv",
+    "feature_view.csv",
+    "join_integrity.csv",
+    "monthly_kpis.csv",
+    "predictive_permutation_null.csv",
+    "predictive_test.csv",
+    "quarterly_claims.csv",
+    "revenue_view.csv",
+    "segment_outcomes.csv",
+    "support_view.csv",
+    "univariate_account.csv"
+  ],
+  "segment_tests": 39,
+  "segment_tests_p_lt_05": 5,
+  "segment_tests_q_lt_10": 4,
+  "univariate_tests_q_lt_10": 0,
+  "feature_tests_q_lt_10": 0
+}

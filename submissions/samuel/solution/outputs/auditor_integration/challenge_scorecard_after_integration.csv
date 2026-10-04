@@ -1,0 +1,11 @@
+criterion,current,expected_after_truth_lab,rationale
+Root cause,9,9,Final wording: no reliable customer-loss target; definitions disagree + temporal/semantic inconsistencies; individual cause not identifiable
+Segments,8,8,"Observed ranking with churned/total, Wilson CI, verdict label and pre-defined N>=30 rule; business-priority column separate"
+Specific accounts,8,9,Named V1/V2/V3 lists; per-account descriptive data-quality flags ready for the Truth Lab brief
+Concrete actions,9,9,Monday actions; reason-code redesign now a data-driven action (p=0.95 vs feedback text)
+Estimated impact,7,7,Unchanged: fact / conditional scenario / pilot
+5-table crossing,8,9,Temporal alignment checks now cross usage x subscriptions x accounts and tickets x accounts
+CEO usability,8,9,Sharper headline + know / don't-know table; README kept short; Truth Lab not built
+Differentiator,5,9,"Truth Lab still NOT built: spec upgraded (data-quality story, confidence page, account flags)"
+AI process,9,9,"Third independent verification (clean-chat auditor) reproduced before incorporation; 52/53 reproduced, 1 conflict reported; screenshots still missing"
+Causality discipline,10,10,"No probability, no score; flags descriptive; segments labelled not validated"

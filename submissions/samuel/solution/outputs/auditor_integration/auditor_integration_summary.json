@@ -1,0 +1,185 @@
+{
+  "temporal": [
+    {
+      "table": "feature_usage",
+      "check": "usage_date inside the linked subscription's observed life (start_date <= usage_date <= end_date, open end allowed)",
+      "rows_flagged": 5568,
+      "rows_total": 25000,
+      "share": 0.22272,
+      "status": "PARTIAL"
+    },
+    {
+      "table": "feature_usage",
+      "check": "usage_date before the account's signup_date",
+      "rows_flagged": 13198,
+      "rows_total": 25000,
+      "share": 0.52792,
+      "status": "WARNING"
+    },
+    {
+      "table": "feature_usage",
+      "check": "usage_date before the linked subscription's start_date",
+      "rows_flagged": 19142,
+      "rows_total": 25000,
+      "share": 0.76568,
+      "status": "WARNING"
+    },
+    {
+      "table": "support_tickets",
+      "check": "submitted_at before the account's signup_date",
+      "rows_flagged": 1077,
+      "rows_total": 2000,
+      "share": 0.5385,
+      "status": "WARNING"
+    }
+  ],
+  "support_post_signup": [
+    {
+      "metric": "tickets",
+      "churn_flag_true_mean": 2.4269662921348316,
+      "churn_flag_false_mean": 2.480701754385965,
+      "n_true": 89,
+      "n_false": 285,
+      "mann_whitney_p": 0.9233186086367646
+    },
+    {
+      "metric": "first_response_min",
+      "churn_flag_true_mean": 88.77209737827715,
+      "churn_flag_false_mean": 89.84086326928433,
+      "n_true": 89,
+      "n_false": 285,
+      "mann_whitney_p": 0.9449275465489602
+    },
+    {
+      "metric": "resolution_h",
+      "churn_flag_true_mean": 34.40205992509363,
+      "churn_flag_false_mean": 35.80449735449735,
+      "n_true": 89,
+      "n_false": 285,
+      "mann_whitney_p": 0.5512511708218292
+    },
+    {
+      "metric": "escalation_rate",
+      "churn_flag_true_mean": 0.0702247191011236,
+      "churn_flag_false_mean": 0.05499999999999999,
+      "n_true": 89,
+      "n_false": 285,
+      "mann_whitney_p": 0.8560587974355565
+    },
+    {
+      "metric": "csat",
+      "churn_flag_true_mean": 4.029385964912281,
+      "churn_flag_false_mean": 3.944710144927536,
+      "n_true": 76,
+      "n_false": 230,
+      "mann_whitney_p": 0.30584314411124724
+    }
+  ],
+  "support_post_signup_tickets": 923,
+  "reason_feedback": {
+    "events_total": 600,
+    "events_with_feedback": 452,
+    "distinct_feedback_texts": 3,
+    "chi2": 3.830802872743165,
+    "dof": 10,
+    "p_chi2_452": 0.9546570960236788,
+    "p_permutation_452": 0.9582,
+    "cramers_v": 0.06509695689724876,
+    "p_chi2_600_blank_as_category": 0.9863575972482541,
+    "aligned_pairs": {
+      "too expensive -> pricing/budget": 53,
+      "too expensive total": 161,
+      "switched to competitor -> competitor": 21,
+      "switched to competitor total": 136,
+      "missing features -> features": 27,
+      "missing features total": 155
+    }
+  },
+  "subscription_semantics": {
+    "active_records": 4514,
+    "accounts_with_active_record": 500,
+    "mean_active_records_per_account": 9.028,
+    "median_active_records_per_account": 9.0,
+    "accounts_all_three_plans_active": 418,
+    "accounts_two_plus_plans_active": 496,
+    "subscriptions_churn_flag_true": 486,
+    "subscriptions_with_end_date": 486,
+    "churn_flag_equals_end_date_all_rows": true
+  },
+  "V3_21_accounts": {
+    "accounts_any_nonauto_active": 409,
+    "accounts_nonauto_zero_mrr_only": 21,
+    "zero_nonauto_records": 26,
+    "zero_nonauto_all_trials": true,
+    "of_which_have_other_paid_active_records": 21,
+    "V3_accounts": 388,
+    "V3_records": 764,
+    "V3_mrr_proxy": 2023778.0
+  },
+  "account_flag_counts": {
+    "usage_before_signup": 490,
+    "ticket_before_signup": 389,
+    "multiple_plan_overlap": 496,
+    "churn_flag_event_end_mismatch": 400,
+    "non_auto_renew_zero_mrr_only": 21
+  },
+  "top5_segments": [
+    {
+      "dimension": "industry",
+      "segment": "DevTools",
+      "churned": 35,
+      "total": 113,
+      "observed_rate": 0.30973451327433627,
+      "ci95_low": 0.23191541688374973,
+      "ci95_high": 0.40006497366208327
+    },
+    {
+      "dimension": "acquisition channel",
+      "segment": "event",
+      "churned": 29,
+      "total": 96,
+      "observed_rate": 0.3020833333333333,
+      "ci95_low": 0.2193102457465474,
+      "ci95_high": 0.40008687929952563
+    },
+    {
+      "dimension": "signup cohort",
+      "segment": "2023H1",
+      "churned": 29,
+      "total": 109,
+      "observed_rate": 0.26605504587155965,
+      "ci95_low": 0.1920974014994754,
+      "ci95_high": 0.3559416195707682
+    },
+    {
+      "dimension": "trial",
+      "segment": "True",
+      "churned": 25,
+      "total": 97,
+      "observed_rate": 0.25773195876288657,
+      "ci95_low": 0.18109470708719705,
+      "ci95_high": 0.35282780108403383
+    },
+    {
+      "dimension": "seats",
+      "segment": "6-15",
+      "churned": 33,
+      "total": 134,
+      "observed_rate": 0.2462686567164179,
+      "ci95_low": 0.18106846409287522,
+      "ci95_high": 0.3256116673043228
+    }
+  ],
+  "checks_reproduced": 52,
+  "checks_total": 53,
+  "conflicts": [
+    {
+      "finding": "R2",
+      "claim": "reason_code x feedback_text p-value",
+      "auditor_value": 0.986,
+      "reproduced_value": 0.955,
+      "status": "CONFLICT",
+      "note": "0.986 reproduces only when the 148 blank feedbacks enter as a category (p=0.986, n=600). On the 452 filled texts: chi2 p=0.955, permutation p=0.958. Conclusion unchanged: no detectable association."
+    }
+  ]
+}

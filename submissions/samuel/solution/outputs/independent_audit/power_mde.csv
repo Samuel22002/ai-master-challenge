@@ -1,0 +1,7 @@
+design,n_outcome,n_comparison,mde_cohen_d_alpha_05,mde_cohen_d_alpha_bonferroni_40
+ANALYSIS-09 usage: churned vs strict controls,325,135,0.28746567540911855,0.4190039989115489
+ANALYSIS-11B risk-set pairs with telemetry at T-30 (~17% of 486),85,99,0.41647336814587216,0.6104067162556025
+ANALYSIS-10 support: accounts with valid pre-reference tickets (approx.),150,60,0.42993478578607125,0.6294142806452797
+"AUDIT subscription grain, all history",486,4514,0.13377435303243093,0.1943493020255999
+AUDIT account churn_flag,110,390,0.3030390100717357,0.4415752937266777
+AUDIT account any churn event,352,148,0.2749975268127515,0.40071095404837603

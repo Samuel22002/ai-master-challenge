@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RavenStack Churn Truth Lab</title>
+  <meta name="description" content="Qual número de churn acreditar e quais contas o CS deve revisar agora. Estático, offline, sem previsões.">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <aside class="rail" aria-label="Navegação">
+    <div class="brand">
+      <div class="mark"><i aria-hidden="true"></i>Churn Truth Lab</div>
+      <div class="sub">RavenStack · G4 AI Master 001</div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#truth" data-view="truth"><span class="n">01</span>VERDADE DO CHURN</a>
+      <a href="#denominator" data-view="denominator"><span class="n">02</span>DENOMINADOR</a>
+      <a href="#queues" data-view="queues"><span class="n">03</span>FILAS DE AÇÃO</a>
+      <a href="#brief" data-view="brief"><span class="n">04</span>BRIEF DA CONTA</a>
+      <a href="#impact" data-view="impact"><span class="n">05</span>LAB DE IMPACTO</a>
+      <a href="#confidence" data-view="confidence"><span class="n">06</span>CONFIANÇA DOS DADOS</a>
+    </nav>
+    <div class="rail-foot">
+      <b>Sem previsões.</b> Todo número abre SOURCE, GRAIN, COVERAGE e LIMITATION — clique em qualquer <span class="kbd">i</span>.<br>
+      Valores em MRR proxy: o dataset não declara moeda.
+    </div>
+  </aside>
+
+  <main>
+    <section class="view" id="view-truth" aria-label="Verdade do churn"></section>
+    <section class="view" id="view-denominator" aria-label="Denominador"></section>
+    <section class="view" id="view-queues" aria-label="Filas de ação"></section>
+    <section class="view" id="view-brief" aria-label="Brief da conta"></section>
+    <section class="view" id="view-impact" aria-label="Laboratório de impacto"></section>
+    <section class="view" id="view-confidence" aria-label="Confiança dos dados"></section>
+    <pre id="selftest-results"></pre>
+  </main>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="panel" id="panel" aria-label="Metadados da métrica" aria-hidden="true">
+    <button class="px" id="panel-close" aria-label="Fechar">×</button>
+    <div class="eyebrow" id="panel-eyebrow">Métrica</div>
+    <div class="pv" id="panel-value"></div>
+    <dl>
+      <dt>SOURCE</dt><dd id="panel-source"></dd>
+      <dt>GRAIN</dt><dd id="panel-grain"></dd>
+      <dt>COVERAGE</dt><dd id="panel-coverage"></dd>
+      <dt>LIMITATION</dt><dd id="panel-limitation"></dd>
+    </dl>
+  </aside>
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+
+  <script src="data/truth_lab_data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

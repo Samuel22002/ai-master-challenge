@@ -1,0 +1,11 @@
+criterion,current_after_rewrite,expected_after_truth_lab,rationale
+Root cause,8,8,"Management root cause stated as headline (KPI mixes grains, no lifecycle); individual cancellation cause explicitly not identifiable"
+Segments,7,7,"Two columns: predicted risk (none validated) vs business priority (value, exposure, status)"
+Specific accounts,8,9,Named V1/V2/V3 lists with declared rules; Truth Lab adds per-account drill-down
+Concrete actions,9,9,Monday actions with owners and 14-day reconciliation; 30/60/90 roadmap
+Estimated impact,7,7,"Three levels: fact, conditional scenarios, real effect only via pilot"
+5-table crossing,8,9,All five tables used; account brief in Truth Lab will show them in one view
+CEO usability,8,9,2-page diagnosis without statistical jargon; Truth Lab makes it interactive
+Differentiator,5,9,Workbook + requirements only; Truth Lab NOT built yet
+AI process,8,9,Two documented correction stories; tool list pending Samuel confirmation; screenshots/chat exports still missing
+Causality discipline,10,10,"No probability, no causal claim, scenarios labelled, pilot pre-registered"

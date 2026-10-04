@@ -1,0 +1,9 @@
+# Python 3.12 (validated with 3.12.10). Only the libraries imported by solution/scripts/.
+# Versions pinned to the environment in which every result was reproduced
+# (the 15 predictive models re-ran with 54/54 identical values).
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.8.0
+statsmodels==0.14.6
+openpyxl==3.1.5

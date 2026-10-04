@@ -1,0 +1,19 @@
+reason_code,feedback_text,events,share_within_feedback_text
+budget,missing features,24,0.15483870967741936
+budget,switched to competitor,24,0.17647058823529413
+budget,too expensive,28,0.17391304347826086
+competitor,missing features,27,0.17419354838709677
+competitor,switched to competitor,21,0.15441176470588236
+competitor,too expensive,24,0.14906832298136646
+features,missing features,27,0.17419354838709677
+features,switched to competitor,23,0.16911764705882354
+features,too expensive,32,0.19875776397515527
+pricing,missing features,20,0.12903225806451613
+pricing,switched to competitor,24,0.17647058823529413
+pricing,too expensive,25,0.15527950310559005
+support,missing features,31,0.2
+support,switched to competitor,20,0.14705882352941177
+support,too expensive,29,0.18012422360248448
+unknown,missing features,26,0.16774193548387098
+unknown,switched to competitor,24,0.17647058823529413
+unknown,too expensive,23,0.14285714285714285

@@ -1,0 +1,51 @@
+table,column,dtype,rows,nulls,null_pct,distinct,summary
+accounts,account_id,str,500,0,0.0,500,high cardinality; top=A-2e4581 (1)
+accounts,account_name,str,500,0,0.0,500,high cardinality; top=Company_0 (1)
+accounts,industry,str,500,0,0.0,5,DevTools=113; FinTech=112; Cybersecurity=100; HealthTech=96; EdTech=79
+accounts,country,str,500,0,0.0,7,US=291; UK=58; IN=49; AU=32; DE=25; CA=23; FR=22
+accounts,signup_date,datetime64[us],500,0,0.0,370,min=2023-01-02 max=2024-12-31
+accounts,referral_source,str,500,0,0.0,5,organic=114; other=103; ads=98; event=96; partner=89
+accounts,plan_tier,str,500,0,0.0,3,Pro=178; Basic=168; Enterprise=154
+accounts,seats,int64,500,0,0.0,73,mean=20.56 sd=21.04 min=1.00 p25=5.00 p50=15.00 p75=28.00 max=163.00
+accounts,is_trial,bool,500,0,0.0,2,true=0.194
+accounts,churn_flag,bool,500,0,0.0,2,true=0.220
+subscriptions,subscription_id,str,5000,0,0.0,5000,high cardinality; top=S-8cec59 (1)
+subscriptions,account_id,str,5000,0,0.0,500,high cardinality; top=A-d4ac0e (19)
+subscriptions,start_date,datetime64[us],5000,0,0.0,625,min=2023-01-09 max=2024-12-31
+subscriptions,end_date,datetime64[us],5000,4514,0.9028,208,min=2023-04-05 max=2024-12-31
+subscriptions,plan_tier,str,5000,0,0.0,3,Enterprise=1723; Pro=1675; Basic=1602
+subscriptions,seats,int64,5000,0,0.0,123,mean=29.85 sd=23.09 min=1.00 p25=14.00 p50=24.00 p75=40.00 max=189.00
+subscriptions,mrr_amount,int64,5000,0,0.0,306,mean=2267.75 sd=3421.38 min=0.00 p25=285.00 p50=931.00 p75=2786.00 max=33830.00
+subscriptions,arr_amount,int64,5000,0,0.0,306,mean=27212.99 sd=41056.50 min=0.00 p25=3420.00 p50=11172.00 p75=33432.00 max=405960.00
+subscriptions,is_trial,bool,5000,0,0.0,2,true=0.156
+subscriptions,upgrade_flag,bool,5000,0,0.0,2,true=0.106
+subscriptions,downgrade_flag,bool,5000,0,0.0,2,true=0.044
+subscriptions,churn_flag,bool,5000,0,0.0,2,true=0.097
+subscriptions,billing_frequency,str,5000,0,0.0,2,monthly=2539; annual=2461
+subscriptions,auto_renew_flag,bool,5000,0,0.0,2,true=0.801
+feature_usage,usage_id,str,25000,0,0.0,24979,high cardinality; top=U-25b56c (2)
+feature_usage,subscription_id,str,25000,0,0.0,4967,high cardinality; top=S-0896f4 (16)
+feature_usage,usage_date,datetime64[us],25000,0,0.0,731,min=2023-01-01 max=2024-12-31
+feature_usage,feature_name,str,25000,0,0.0,40,feature_12=659; feature_32=659; feature_6=655; feature_17=651; feature_34=650; feature_26=649; feature_36=648; feature_31=644
+feature_usage,usage_count,int64,25000,0,0.0,27,mean=10.02 sd=3.14 min=0.00 p25=8.00 p50=10.00 p75=12.00 max=26.00
+feature_usage,usage_duration_secs,int64,25000,0,0.0,4168,mean=3042.20 sd=2056.54 min=0.00 p25=1350.00 p50=2760.00 p75=4400.00 max=12696.00
+feature_usage,error_count,int64,25000,0,0.0,9,mean=0.56 sd=1.01 min=0.00 p25=0.00 p50=0.00 p75=1.00 max=8.00
+feature_usage,is_beta_feature,bool,25000,0,0.0,2,true=0.102
+support_tickets,ticket_id,str,2000,0,0.0,2000,high cardinality; top=T-0024de (1)
+support_tickets,account_id,str,2000,0,0.0,492,high cardinality; top=A-bb3bd4 (11)
+support_tickets,submitted_at,datetime64[us],2000,0,0.0,671,min=2023-01-02 max=2024-12-31
+support_tickets,closed_at,datetime64[us],2000,0,0.0,1893,min=2023-01-03 max=2024-12-31
+support_tickets,resolution_time_hours,float64,2000,0,0.0,72,mean=35.86 sd=21.14 min=1.00 p25=17.00 p50=35.00 p75=54.00 max=72.00
+support_tickets,priority,str,2000,0,0.0,4,urgent=514; high=510; medium=491; low=485
+support_tickets,first_response_time_minutes,int64,2000,0,0.0,180,mean=88.48 sd=51.53 min=1.00 p25=43.00 p50=88.00 p75=131.00 max=180.00
+support_tickets,satisfaction_score,float64,2000,825,0.4125,3,mean=3.98 sd=0.81 min=3.00 p25=3.00 p50=4.00 p75=5.00 max=5.00
+support_tickets,escalation_flag,bool,2000,0,0.0,2,true=0.048
+churn_events,churn_event_id,str,600,0,0.0,600,high cardinality; top=C-816288 (1)
+churn_events,account_id,str,600,0,0.0,352,high cardinality; top=A-0a62f5 (5)
+churn_events,churn_date,datetime64[us],600,0,0.0,311,min=2023-01-25 max=2024-12-31
+churn_events,reason_code,str,600,0,0.0,6,features=114; support=104; budget=104; unknown=95; competitor=92; pricing=91
+churn_events,refund_amount_usd,float64,600,0,0.0,142,mean=14.42 sd=39.22 min=0.00 p25=0.00 p50=0.00 p75=0.00 max=392.92
+churn_events,preceding_upgrade_flag,bool,600,0,0.0,2,true=0.205
+churn_events,preceding_downgrade_flag,bool,600,0,0.0,2,true=0.088
+churn_events,is_reactivation,bool,600,0,0.0,2,true=0.102
+churn_events,feedback_text,str,600,148,0.24666666666666667,3,too expensive=161; missing features=155; nan=148; switched to competitor=136

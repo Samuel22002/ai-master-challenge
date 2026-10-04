@@ -1,0 +1,2 @@
+events,events_before_first_subscription,events_with_zero_active_subs,events_with_2plus_active_subs,median_active_subs_at_event,first_event_marked_reactivation,accounts_flagged_without_event,accounts_with_event_not_flagged
+600,53,55,478,4.0,26,35,277

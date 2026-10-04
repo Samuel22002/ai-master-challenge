@@ -1,0 +1,6 @@
+metric,churn_flag_true_mean,churn_flag_false_mean,n_true,n_false,mann_whitney_p,scope
+tickets,2.4269662921348316,2.480701754385965,89,285,0.9233186086367646,tickets with submitted_at >= signup_date (923 of 2000); account-level means over accounts with >=1 remaining ticket
+first_response_min,88.77209737827715,89.84086326928433,89,285,0.9449275465489602,tickets with submitted_at >= signup_date (923 of 2000); account-level means over accounts with >=1 remaining ticket
+resolution_h,34.40205992509363,35.80449735449735,89,285,0.5512511708218292,tickets with submitted_at >= signup_date (923 of 2000); account-level means over accounts with >=1 remaining ticket
+escalation_rate,0.0702247191011236,0.05499999999999999,89,285,0.8560587974355565,tickets with submitted_at >= signup_date (923 of 2000); account-level means over accounts with >=1 remaining ticket
+csat,4.029385964912281,3.944710144927536,76,230,0.30584314411124724,tickets with submitted_at >= signup_date (923 of 2000); account-level means over accounts with >=1 remaining ticket

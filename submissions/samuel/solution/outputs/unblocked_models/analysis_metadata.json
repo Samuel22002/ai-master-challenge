@@ -1,0 +1,22 @@
+{
+  "analysis_id": "ANALYSIS-15",
+  "seed": 20261004,
+  "permutations_per_model": 50,
+  "gee": {
+    "n": 5000,
+    "accounts": 500,
+    "events": 486,
+    "working_correlation": -0.006504658122202173,
+    "terms": 21
+  },
+  "time_series_q4_shift_q_lt_10": 13,
+  "ensemble_permutation_p_lt_05": 0,
+  "gee_terms_q_lt_10": 0,
+  "outputs": [
+    "ensemble_tests.csv",
+    "gee_subscription_end.csv",
+    "monthly_with_mechanism.csv",
+    "random_forest_top_importance.csv",
+    "time_series_tests.csv"
+  ]
+}

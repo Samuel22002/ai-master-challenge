@@ -1,0 +1,10 @@
+internal_coherence_test,p_value,reading
+support: priority -> resolution_time,0.3329638843440793,INDEPENDENT (no detectable link)
+support: priority -> first_response,0.12766516025832508,INDEPENDENT (no detectable link)
+support: escalation -> resolution_time,0.5301227518331226,INDEPENDENT (no detectable link)
+support: csat ~ resolution_time (spearman),0.7009813003090279,INDEPENDENT (no detectable link)
+support: csat ~ first_response (spearman),0.3242776169785155,INDEPENDENT (no detectable link)
+usage: error_count ~ usage_count (spearman),0.5541569249879922,INDEPENDENT (no detectable link)
+events: preceding_upgrade_flag vs real upgrade record in 90d,0.37252775191239007,INDEPENDENT (no detectable link)
+subscriptions: upgrade_flag vs plan direction vs previous record,0.05912248395912943,INDEPENDENT (no detectable link)
+subscriptions: plan_tier vs account plan_tier,0.20330512960274064,INDEPENDENT (no detectable link)

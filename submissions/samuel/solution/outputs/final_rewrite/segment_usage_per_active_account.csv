@@ -1,0 +1,16 @@
+segment,level,usage_per_active_account_2023H2,usage_per_active_account_2024H2,change_pct
+industry,Cybersecurity,365.3,131.7,-64.0
+industry,DevTools,322.4,122.8,-62.0
+industry,EdTech,404.8,128.9,-68.0
+industry,FinTech,291.2,127.0,-56.0
+industry,HealthTech,291.9,126.4,-57.0
+country,AU,311.9,119.0,-62.0
+country,CA,310.2,105.8,-66.0
+country,DE,184.8,111.2,-40.0
+country,FR,533.8,120.5,-77.0
+country,IN,275.0,133.9,-51.0
+country,UK,318.8,122.1,-62.0
+country,US,352.6,131.5,-63.0
+plan_tier,Basic,387.8,134.1,-65.0
+plan_tier,Enterprise,294.3,125.3,-57.0
+plan_tier,Pro,305.7,122.2,-60.0

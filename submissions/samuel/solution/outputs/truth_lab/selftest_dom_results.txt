@@ -1,0 +1,102 @@
+SELFTEST PASS 101/101
+PASS | view truth renders | 2586
+PASS | view denominator renders | 3746
+PASS | view queues renders | 47091
+PASS | view brief renders | 14081
+PASS | view impact renders | 2764
+PASS | view confidence renders | 2344
+PASS | headline
+PASS | signals + observable-state title
+PASS | root cause kept as two levels
+PASS | "não é suportada" wording
+PASS | impact title wording
+PASS | outcome card wording
+PASS | F-22 formula next to the metric
+PASS | metadata: every data-m has SOURCE/GRAIN/COVERAGE/LIMITATION | 68 ids; incomplete: 
+PASS | metadata panel opens with all four fields | 2.023.778
+PASS | number on screen: 110
+PASS | number on screen: 352
+PASS | number on screen: 312
+PASS | number on screen: 75
+PASS | number on screen: 72
+PASS | number on screen: 227
+PASS | number on screen: 50
+PASS | number on screen: 2.073.153
+PASS | number on screen: 2.781.650
+PASS | number on screen: 2.023.778
+PASS | number on screen: 873.996
+PASS | number on screen: 20,4%
+PASS | number on screen: 27,4%
+PASS | number on screen: 19,9%
+PASS | number on screen: 43,2%
+PASS | number on screen: 176
+PASS | number on screen: 409
+PASS | number on screen: 899
+PASS | number on screen: 388
+PASS | number on screen: 764
+PASS | number on screen: 21
+PASS | number on screen: 314
+PASS | number on screen: 157 / 157
+PASS | number on screen: 52,8%
+PASS | number on screen: 53,9%
+PASS | number on screen: 22,27%
+PASS | number on screen: p = 0,955
+PASS | number on screen: 486
+PASS | number on screen: 418 / 500
+PASS | number on screen: 8,4%
+PASS | number on screen: 14,3%
+PASS | number on screen: 35 / 113
+PASS | number on screen: 29 / 96
+PASS | number on screen: 29 / 109
+PASS | number on screen: 25 / 97
+PASS | number on screen: 33 / 134
+PASS | number on screen: 110 / 500
+PASS | number on screen: 31,0%
+PASS | number on screen: 30,2%
+PASS | number on screen: 26,6%
+PASS | number on screen: 25,8%
+PASS | number on screen: 24,6%
+PASS | number on screen: 22,0%
+PASS | number on screen: 8 / 25
+PASS | number on screen: 101.189
+PASS | number on screen: 202.378
+PASS | number on screen: 303.567
+PASS | number on screen: 1.214.267
+PASS | number on screen: 2.428.534
+PASS | number on screen: 3.642.800
+PASS | number on screen: ~7,4 pp
+PASS | number on screen: ~9,4 pp
+PASS | number on screen: ~11,0 pp
+PASS | denominator filter switches series | industry:DevTools
+PASS | usage charts draw 3 × 8 points | 48
+PASS | segment toggle shows all N≥30 | 27
+PASS | Germany excluded from ranking
+PASS | segment verdict label present
+PASS | filter V1 = 110
+PASS | filter V2 = 50
+PASS | filter V3 = 388
+PASS | filter V3-W1 = 50
+PASS | filter WAVE 1 = 176
+PASS | search filters rows | 97
+PASS | sort by active MRR proxy desc | A-5b1bcd
+PASS | header click sorts by account_id
+PASS | CSV export: header + 110 rows | 111
+PASS | V1 review state not pre-filled
+PASS | priority label on queues page
+PASS | account brief opens by id
+PASS | brief shows 5 data-quality flags
+PASS | brief CSM prep has 6 questions
+PASS | brief search opens another account
+PASS | simulator 5% | 101.189,1.214.267
+PASS | simulator 10% | 202.378,2.428.534
+PASS | simulator 15% | 303.567,3.642.800
+PASS | simulator 0%
+PASS | break-even empty by default
+PASS | break-even 50.000 → 2,47% | 2,47%
+PASS | permanent scenario disclaimer
+PASS | confidence matrix has 10 tiles
+PASS | health readiness 0/2/8
+PASS | forbidden-phrase scan of rendered UI
+PASS | no external requests | 0 resources; external: 
+PASS | no window errors
+PASS | no console errors

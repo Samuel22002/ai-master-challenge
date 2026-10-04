@@ -1,0 +1,6 @@
+table,rows,columns,duplicate_rows,duplicate_pk,null_cells,null_columns,date_min,date_max,fk_orphans
+accounts,500,10,0,0,0,,2023-01-02,2024-12-31,0
+subscriptions,5000,14,0,0,4514,end_date=4514,2023-01-09,2024-12-31,0
+usage,25000,8,0,21,0,,2023-01-01,2024-12-31,0
+tickets,2000,9,0,0,825,satisfaction_score=825,2023-01-02,2024-12-31,0
+events,600,9,0,0,148,feedback_text=148,2023-01-25,2024-12-31,0

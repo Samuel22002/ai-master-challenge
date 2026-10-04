@@ -1,0 +1,10 @@
+metric,churn_flag_true_mean,churn_flag_false_mean,mann_whitney_p
+usage events (sum),522.036,495.131,0.206
+distinct features used,28.336,27.413,0.217
+errors (sum),28.155,28.231,0.795
+errors per usage,0.054,0.057,0.115
+tickets,3.927,4.021,0.342
+first response (min),84.927,89.582,0.103
+resolution (h),35.485,36.45,0.717
+escalations,0.218,0.182,0.399
+CSAT (3-5 observed),4.003,3.953,0.54

@@ -1,0 +1,10 @@
+metric,value
+active_records,4514
+accounts_with_active_record,500
+mean_active_records_per_account,9.028
+median_active_records_per_account,9.0
+accounts_all_three_plans_active,418
+accounts_two_plus_plans_active,496
+subscriptions_churn_flag_true,486
+subscriptions_with_end_date,486
+churn_flag_equals_end_date_all_rows,True

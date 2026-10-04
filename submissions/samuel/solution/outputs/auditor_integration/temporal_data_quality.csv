@@ -1,0 +1,5 @@
+table,check,rows_flagged,rows_total,share,status
+feature_usage,"usage_date inside the linked subscription's observed life (start_date <= usage_date <= end_date, open end allowed)",5568,25000,0.22272,PARTIAL
+feature_usage,usage_date before the account's signup_date,13198,25000,0.52792,WARNING
+feature_usage,usage_date before the linked subscription's start_date,19142,25000,0.76568,WARNING
+support_tickets,submitted_at before the account's signup_date,1077,2000,0.5385,WARNING

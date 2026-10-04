@@ -1,0 +1,17 @@
+{
+  "metric": "usage per active account",
+  "formula": "sum(feature_usage.usage_count where usage_date in period) / count(distinct account_id with >=1 subscription record where start_date <= period_end AND (end_date is null OR end_date > period_end))",
+  "active_account_rule": "Active account = account with >=1 subscription record active at the period-end date (start_date <= period_end and end_date empty or after period_end).",
+  "numerator_note": "All usage rows dated in the period, joined to the account via subscription_id. Rows are NOT filtered to the subscription's observed life (only 22.27% fall inside it).",
+  "segment_note": "For segment cuts (industry, country, plan), numerator and denominator are both restricted to accounts whose accounts-table attribute equals the segment.",
+  "periods_used": {
+    "segment_comparison": "2023H2 (2023-07-01..2023-12-31, period_end 2023-12-31) vs 2024H2 (2024-07-01..2024-12-31, period_end 2024-12-31)",
+    "quarterly_table": "calendar quarter, period_end = last day of the quarter"
+  },
+  "source_code": [
+    "solution/final_rewrite_build.py: act_accounts()",
+    "solution/end_to_end_sweep.py: monthly_panel() accounts_with_active_sub_eom"
+  ],
+  "active_accounts_2023_12_31": 190,
+  "active_accounts_2024_12_31": 500
+}

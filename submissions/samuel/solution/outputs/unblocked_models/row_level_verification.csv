@@ -1,0 +1,15 @@
+signal,observed,expected_or_reference,p_value,test,verdict
+usage rows 2024Q4,3204.0,3146.374829001368,0.308529234709593,Poisson vs uniform-by-day,NO SIGNAL AT ROW LEVEL
+usage_count per row 2024Q4 vs other quarters,10.0583645443196,10.015507432556433,0.4200290661405651,Mann-Whitney,NO SIGNAL AT ROW LEVEL
+errors per usage row 2024Q4 vs other quarters,0.5249687890137328,0.5700587263718113,0.0255,look-elsewhere permutation over 8 quarters,SIGNAL AT ROW LEVEL
+tickets 2024Q4,270.0,251.70998632010944,0.26319710598368967,Poisson vs uniform-by-day,NO SIGNAL AT ROW LEVEL
+CSAT 2024Q4 vs other quarters,3.891566265060241,3.99603567888999,0.352,look-elsewhere permutation over 8 quarters,NO SIGNAL AT ROW LEVEL
+CSAT heterogeneity across 24 months,42.75268281713006,23.11047592623171,0.004497751124437781,"Kruskal H, permutation",SIGNAL AT ROW LEVEL
+CSAT seasonality (same calendar month 2023 vs 2024),0.2101579405015039,0.0,0.512085328993753,Spearman,NO SIGNAL AT ROW LEVEL
+monthly CSAT vs churn_events_per_100_accounts,-0.22797481469749972,0.0,0.2839845965576597,Spearman over 24 months,NO SIGNAL AT ROW LEVEL
+monthly CSAT vs ended_subs_per_100_active,-0.25300589636244003,0.0,0.2329353208406287,Spearman over 24 months,NO SIGNAL AT ROW LEVEL
+monthly CSAT vs tickets,-0.2575726087608461,0.0,0.22432264756923298,Spearman over 24 months,NO SIGNAL AT ROW LEVEL
+monthly CSAT vs error_rate,0.1653252472997135,0.0,0.4401003807942084,Spearman over 24 months,NO SIGNAL AT ROW LEVEL
+monthly CSAT vs next-month churn events/100,0.21161934126657106,0.0,0.3323796903233207,"Spearman, lag 1",NO SIGNAL AT ROW LEVEL
+"churn events 2024Q4 vs mechanism churn_date ~ U[signup, obs_end]",251.0,251.89238925465776,0.9886536895857312,Poisson,NO SIGNAL AT ROW LEVEL
+churn events by month vs mechanism (24 months),600.0,600.0,0.8027825879956693,chi2 goodness of fit,NO SIGNAL AT ROW LEVEL

@@ -1,0 +1,41 @@
+claim_id,claim,expected_text,required_in,found_in,status
+N01,usage inside lifecycle (pt-BR),"22,27%",README;APPX;LAB,README;APPX;LAB,VERIFIED
+N01b,usage inside lifecycle (English label),22.27%,LAB,LAB,VERIFIED
+N02,usage rows inside lifecycle,5.568,APPX;LAB,APPX;LAB,VERIFIED
+N03,usage before signup %,"52,8%",README;EXEC;APPX;LAB,README;EXEC;APPX;LAB,VERIFIED
+N04,usage before signup rows,13.198,APPX;LAB,APPX;LAB,VERIFIED
+N05,tickets before signup %,"53,9%",README;EXEC;APPX;LAB,README;EXEC;APPX;LAB,VERIFIED
+N06,tickets before signup rows,1.077,APPX;LAB,APPX;LAB,VERIFIED
+N07,feedback texts,452,README;EXEC;APPX;LAB,README;EXEC;APPX;LAB,VERIFIED
+N08,"reason x feedback p (3 dp, executive docs)","p = 0,955",README;EXEC,README;EXEC,VERIFIED
+N09,reason x feedback p (3 dp),"p = 0,955",APPX,APPX,VERIFIED
+N10,reason x feedback p (Truth Lab card),"p = 0,955",LAB,LAB,VERIFIED
+N11,auditor p with blank as category,"p = 0,986",APPX,APPX,VERIFIED
+N12,subscriptions churn_flag = end_date,486 assinaturas têm `churn_flag = true`,APPX,APPX,VERIFIED
+N13,mean active records per account,"9,0",APPX;LAB,APPX;LAB,VERIFIED
+N14,accounts with all three plans active,418 / 500,APPX;LAB,APPX;LAB,VERIFIED
+N15,V3 409 wording,Das 409 contas com algum registro ativo `auto_renew = false`,README,README,VERIFIED
+N16,V3 21 wording,21 possuem somente exposições `auto_renew = false` de trial com MRR proxy zero,README;EXEC,README;EXEC,VERIFIED
+N17,V3 388/764/total,388 contas e 764 registros,README;EXEC,README;EXEC,VERIFIED
+N18,denominator rule (README/EXEC),≥ 1 registro de assinatura ativo na data de fim do período,README;EXEC,README;EXEC,VERIFIED
+N19,denominator active accounts 2023-12-31,190 e 500 contas ativas,APPX,APPX,VERIFIED
+N20,headline,A RavenStack está medindo eventos diferentes como churn.,README;EXEC,README;EXEC,VERIFIED
+N21,subheadline,não conseguimos confirmar que o aumento dos eventos registrados representa aumento da perda real de clientes,README;EXEC,README;EXEC,VERIFIED
+N22,final root cause wording,os dados não sustentam um target confiável de perda de cliente,EXEC,EXEC,VERIFIED
+N22b,final root cause wording (README),Os dados não sustentam um target confiável de perda de cliente,README,README,VERIFIED
+N23,support sensitivity tickets,"| Tickets | 2,43 | 2,48 |",APPX,APPX,VERIFIED
+N24,support sensitivity escalation,"| Taxa de escalação | 7,0% | 5,5% |",APPX,APPX,VERIFIED
+N25,support sensitivity CSAT,"| CSAT | 4,03 | 3,94 |",APPX,APPX,VERIFIED
+N26,overall rate num/den,110 / 500,README;EXEC;APPX,README;EXEC;APPX,VERIFIED
+N27,Germany excluded,8 / 25,README;APPX,README;APPX,VERIFIED
+N28,segment verdict label,OBSERVED — NOT VALIDATED AS HIGHER RISK,README;EXEC;APPX,README;EXEC;APPX,VERIFIED
+N29-DevTools,segment DevTools churned/total,35 / 113,README;APPX,README;APPX,VERIFIED
+N29-event,segment event churned/total,29 / 96,README;APPX,README;APPX,VERIFIED
+N29-2023H1,segment 2023H1 churned/total,29 / 109,README;APPX,README;APPX,VERIFIED
+N29-True,segment True churned/total,25 / 97,README;APPX,README;APPX,VERIFIED
+N29-6-15,segment 6-15 churned/total,33 / 134,README;APPX,README;APPX,VERIFIED
+N30-usage_before_signup,account flag usage_before_signup,| `usage_before_signup` |,LAB,LAB,VERIFIED
+N30-ticket_before_signup,account flag ticket_before_signup,| `ticket_before_signup` |,LAB,LAB,VERIFIED
+N30-multiple_plan_overlap,account flag multiple_plan_overlap,| `multiple_plan_overlap` |,LAB,LAB,VERIFIED
+N30-churn_flag_event_end_mismatch,account flag churn_flag_event_end_mismatch,| `churn_flag_event_end_mismatch` |,LAB,LAB,VERIFIED
+N30-non_auto_renew_zero_mrr_only,account flag non_auto_renew_zero_mrr_only,| `non_auto_renew_zero_mrr_only` |,LAB,LAB,VERIFIED

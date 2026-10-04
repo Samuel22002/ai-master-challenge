@@ -1,0 +1,9 @@
+check,expected,observed,status
+workbook V1 Status Reconciliation rows,110,110,PASS
+workbook V2 Top-Value Coverage rows,50,50,PASS
+workbook V3 Renewal Readiness rows,388,388,PASS
+workbook V3 wave W1 rows,50,50,PASS
+workbook V3 pilot-eligible rows,314,314,PASS
+workbook V3 rows with exposure <= 0,0,0,PASS
+workbook sheets,"Overview, V1, V2, V3, Definitions & Caveats","Overview, V1 Status Reconciliation, V2 Top-Value Coverage, V3 Renewal Readiness, Definitions & Caveats",PASS
+trial-only accounts listed separately,21,21,PASS

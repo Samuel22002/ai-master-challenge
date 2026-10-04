@@ -1,0 +1,214 @@
+group,test,status,detail
+numeric,def_flag = 110,PASS,110
+numeric,def_event = 352,PASS,352
+numeric,def_end = 312,PASS,312
+numeric,def_zero = 0,PASS,0
+numeric,ov_fe = 75,PASS,75
+numeric,ov_fn = 72,PASS,72
+numeric,ov_en = 227,PASS,227
+numeric,ov_all = 50,PASS,50
+numeric,v1_accounts = 110,PASS,110
+numeric,v2_accounts = 50,PASS,50
+numeric,v3_accounts = 388,PASS,388
+numeric,w1_accounts = 50,PASS,50
+numeric,wave1 = 176,PASS,176
+numeric,v3_records = 764,PASS,764
+numeric,w1_records = 137,PASS,137
+numeric,wv_12 = 9,PASS,9
+numeric,wv_1w = 11,PASS,11
+numeric,wv_2w = 17,PASS,17
+numeric,wv_all = 3,PASS,3
+numeric,v3_any_accounts = 409,PASS,409
+numeric,v3_any_records = 899,PASS,899
+numeric,v3_zero_only = 21,PASS,21
+numeric,pilot_pop = 314,PASS,314
+numeric,sub_flag = 486,PASS,486
+numeric,sub_end = 486,PASS,486
+numeric,"v1_mrr = 2,073,153",PASS,2.073.153
+numeric,"v2_mrr = 2,781,650",PASS,2.781.650
+numeric,"v3_mrr = 2,023,778",PASS,2.023.778
+numeric,"w1_mrr = 873,996",PASS,873.996
+numeric,"impact_base = 2,023,778",PASS,2.023.778
+numeric,"v1_share displays 20,4%",PASS,"20,4%"
+numeric,"v2_share displays 27,4%",PASS,"27,4%"
+numeric,"v3_share displays 19,9%",PASS,"19,9%"
+numeric,"w1_share_v3 displays 43,2%",PASS,"43,2%"
+numeric,"conc_top10 displays 8,4%",PASS,"8,4%"
+numeric,"conc_top20 displays 14,3%",PASS,"14,3%"
+numeric,"conc_top50 displays 27,4%",PASS,"27,4%"
+numeric,"dq_usage_pre displays 52,8%",PASS,"52,8%"
+numeric,"dq_ticket_pre displays 53,9%",PASS,"53,9%"
+numeric,"dq_inlife displays 22,27%",PASS,"22,27%"
+numeric,"dq_reason_p displays p = 0,955",PASS,"p = 0,955"
+numeric,"seg_overall displays 22,0%",PASS,"22,0%"
+numeric,pilot_arm displays 157 / 157,PASS,157 / 157
+numeric,sub_all3 displays 418 / 500,PASS,418 / 500
+numeric,"sub_per_acc displays 9,0",PASS,"9,0"
+numeric,"mde_0.1 displays ~7,4 pp",PASS,"~7,4 pp"
+numeric,"mde_0.15 displays ~9,4 pp",PASS,"~9,4 pp"
+numeric,"mde_0.2 displays ~11,0 pp",PASS,"~11,0 pp"
+numeric,health displays 0 GREEN · 2 PARTIAL · 8 RED,PASS,0 GREEN · 2 PARTIAL · 8 RED
+numeric,"usage inside lifecycle 5,568 / 25,000",PASS,
+numeric,"usage before signup 13,198 / 25,000",PASS,
+numeric,"tickets before signup 1,077 / 2,000",PASS,
+numeric,452 populated feedback events,PASS,
+numeric,reason × feedback p = 0.955,PASS,0.9546570960236788
+numeric,486 churn flags = 486 end dates,PASS,
+numeric,418 / 500 all-three-plan accounts,PASS,
+numeric,"impact 5% = 101,189 / 1,214,267",PASS,"(101189, 1214267)"
+numeric,"impact 10% = 202,378 / 2,428,534",PASS,"(202378, 2428534)"
+numeric,"impact 15% = 303,567 / 3,642,800",PASS,"(303567, 3642800)"
+numeric,health items 0 GREEN / 2 PARTIAL / 8 RED,PASS,
+numeric,500 accounts in brief data,PASS,
+numeric,accounts tagged V1 = 110,PASS,
+numeric,accounts tagged V2 = 50,PASS,
+numeric,accounts tagged V3 = 388,PASS,
+numeric,accounts tagged V3-W1 = 50,PASS,
+numeric,first wave tagged = 176,PASS,
+numeric,pilot tagged = 314,PASS,
+numeric,zero-value non-auto-renew only = 21,PASS,
+numeric,"sum of V1 active MRR proxy = 2,073,153",PASS,
+numeric,"sum of V3 exposed MRR proxy = 2,023,778",PASS,
+numeric,segment DevTools 35 / 113 (N ≥ 30),PASS,
+numeric,segment event 29 / 96 (N ≥ 30),PASS,
+numeric,segment 2023H1 29 / 109 (N ≥ 30),PASS,
+numeric,segment True 25 / 97 (N ≥ 30),PASS,
+numeric,segment 6-15 33 / 134 (N ≥ 30),PASS,
+numeric,Germany 8 / 25 excluded (N < 30),PASS,
+numeric,"usage quarterly total range 30,789–32,227",PASS,
+numeric,usage denominator rule embedded,PASS,
+metadata,all 68 metrics have SOURCE/GRAIN/COVERAGE/LIMITATION,PASS,
+forbidden,no forbidden phrase in index.html,PASS,
+forbidden,'revenue' only in the mandatory label in index.html,PASS,0
+currency,no currency symbol/code in index.html,PASS,[]
+offline,no external reference in index.html,PASS,[]
+forbidden,no forbidden phrase in README.md,PASS,
+forbidden,'revenue' only in the mandatory label in README.md,PASS,0
+currency,no currency symbol/code in README.md,PASS,[]
+offline,no external reference in README.md,PASS,[]
+forbidden,no forbidden phrase in data/truth_lab_data.js,PASS,
+forbidden,'revenue' only in the mandatory label in data/truth_lab_data.js,PASS,0
+currency,no currency symbol/code in data/truth_lab_data.js,PASS,[]
+offline,no external reference in data/truth_lab_data.js,PASS,[]
+forbidden,no forbidden phrase in data/truth_lab_data.json,PASS,
+forbidden,'revenue' only in the mandatory label in data/truth_lab_data.json,PASS,0
+currency,no currency symbol/code in data/truth_lab_data.json,PASS,[]
+offline,no external reference in data/truth_lab_data.json,PASS,[]
+forbidden,no forbidden phrase in assets/css/app.css,PASS,
+forbidden,'revenue' only in the mandatory label in assets/css/app.css,PASS,0
+currency,no currency symbol/code in assets/css/app.css,PASS,[]
+offline,no external reference in assets/css/app.css,PASS,[]
+forbidden,no forbidden phrase in assets/js/app.js,PASS,
+forbidden,'revenue' only in the mandatory label in assets/js/app.js,PASS,0
+currency,no currency symbol/code in assets/js/app.js,PASS,[]
+offline,no external reference in assets/js/app.js,PASS,[]
+files,index.html exists,PASS,
+files,assets/css/app.css exists,PASS,
+files,assets/js/app.js exists,PASS,
+files,data/truth_lab_data.json exists,PASS,
+files,data/truth_lab_data.js exists,PASS,
+files,README.md exists,PASS,
+files,index.html loads only relative local assets,PASS,
+files,data .js wrapper equals .json,PASS,
+functional,self-test header: SELFTEST PASS 101/101,PASS,SELFTEST PASS 101/101
+functional,view truth renders,PASS,2586
+functional,view denominator renders,PASS,3746
+functional,view queues renders,PASS,47091
+functional,view brief renders,PASS,14081
+functional,view impact renders,PASS,2764
+functional,view confidence renders,PASS,2344
+functional,headline,PASS,
+functional,signals + observable-state title,PASS,
+functional,root cause kept as two levels,PASS,
+functional,"""não é suportada"" wording",PASS,
+functional,impact title wording,PASS,
+functional,outcome card wording,PASS,
+functional,F-22 formula next to the metric,PASS,
+functional,metadata: every data-m has SOURCE/GRAIN/COVERAGE/LIMITATION,PASS,68 ids; incomplete: 
+functional,metadata panel opens with all four fields,PASS,2.023.778
+functional,number on screen: 110,PASS,
+functional,number on screen: 352,PASS,
+functional,number on screen: 312,PASS,
+functional,number on screen: 75,PASS,
+functional,number on screen: 72,PASS,
+functional,number on screen: 227,PASS,
+functional,number on screen: 50,PASS,
+functional,number on screen: 2.073.153,PASS,
+functional,number on screen: 2.781.650,PASS,
+functional,number on screen: 2.023.778,PASS,
+functional,number on screen: 873.996,PASS,
+functional,"number on screen: 20,4%",PASS,
+functional,"number on screen: 27,4%",PASS,
+functional,"number on screen: 19,9%",PASS,
+functional,"number on screen: 43,2%",PASS,
+functional,number on screen: 176,PASS,
+functional,number on screen: 409,PASS,
+functional,number on screen: 899,PASS,
+functional,number on screen: 388,PASS,
+functional,number on screen: 764,PASS,
+functional,number on screen: 21,PASS,
+functional,number on screen: 314,PASS,
+functional,number on screen: 157 / 157,PASS,
+functional,"number on screen: 52,8%",PASS,
+functional,"number on screen: 53,9%",PASS,
+functional,"number on screen: 22,27%",PASS,
+functional,"number on screen: p = 0,955",PASS,
+functional,number on screen: 486,PASS,
+functional,number on screen: 418 / 500,PASS,
+functional,"number on screen: 8,4%",PASS,
+functional,"number on screen: 14,3%",PASS,
+functional,number on screen: 35 / 113,PASS,
+functional,number on screen: 29 / 96,PASS,
+functional,number on screen: 29 / 109,PASS,
+functional,number on screen: 25 / 97,PASS,
+functional,number on screen: 33 / 134,PASS,
+functional,number on screen: 110 / 500,PASS,
+functional,"number on screen: 31,0%",PASS,
+functional,"number on screen: 30,2%",PASS,
+functional,"number on screen: 26,6%",PASS,
+functional,"number on screen: 25,8%",PASS,
+functional,"number on screen: 24,6%",PASS,
+functional,"number on screen: 22,0%",PASS,
+functional,number on screen: 8 / 25,PASS,
+functional,number on screen: 101.189,PASS,
+functional,number on screen: 202.378,PASS,
+functional,number on screen: 303.567,PASS,
+functional,number on screen: 1.214.267,PASS,
+functional,number on screen: 2.428.534,PASS,
+functional,number on screen: 3.642.800,PASS,
+functional,"number on screen: ~7,4 pp",PASS,
+functional,"number on screen: ~9,4 pp",PASS,
+functional,"number on screen: ~11,0 pp",PASS,
+functional,denominator filter switches series,PASS,industry:DevTools
+functional,usage charts draw 3 × 8 points,PASS,48
+functional,segment toggle shows all N≥30,PASS,27
+functional,Germany excluded from ranking,PASS,
+functional,segment verdict label present,PASS,
+functional,filter V1 = 110,PASS,
+functional,filter V2 = 50,PASS,
+functional,filter V3 = 388,PASS,
+functional,filter V3-W1 = 50,PASS,
+functional,filter WAVE 1 = 176,PASS,
+functional,search filters rows,PASS,97
+functional,sort by active MRR proxy desc,PASS,A-5b1bcd
+functional,header click sorts by account_id,PASS,
+functional,CSV export: header + 110 rows,PASS,111
+functional,V1 review state not pre-filled,PASS,
+functional,priority label on queues page,PASS,
+functional,account brief opens by id,PASS,
+functional,brief shows 5 data-quality flags,PASS,
+functional,brief CSM prep has 6 questions,PASS,
+functional,brief search opens another account,PASS,
+functional,simulator 5%,PASS,"101.189,1.214.267"
+functional,simulator 10%,PASS,"202.378,2.428.534"
+functional,simulator 15%,PASS,"303.567,3.642.800"
+functional,simulator 0%,PASS,
+functional,break-even empty by default,PASS,
+functional,"break-even 50.000 → 2,47%",PASS,"2,47%"
+functional,permanent scenario disclaimer,PASS,
+functional,confidence matrix has 10 tiles,PASS,
+functional,health readiness 0/2/8,PASS,
+functional,forbidden-phrase scan of rendered UI,PASS,
+functional,no external requests,PASS,0 resources; external: 
+functional,no window errors,PASS,
+functional,no console errors,PASS,
