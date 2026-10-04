@@ -17,7 +17,7 @@ Cruzei as cinco tabelas da RavenStack, submeti cada achado a auditorias adversar
 | Pergunta | Resposta |
 |---|---|
 | **O que eu encontrei?** | **A RavenStack está medindo eventos diferentes como churn.** Três sinais de churn e uma checagem de estado observável dão quatro respostas: 110, 352, 312 e **0** contas. As 110 contas flagged ainda possuem registros de subscription ativos com MRR proxy positivo. |
-| **Por que importa?** | O CEO reage a indicadores que não podem ser interpretados de forma confiável como perda de cliente. Product e CS observam métricas que, isoladamente, não permitem inferir retenção ou saúde do cliente. Ninguém sabe quem saiu, quanto valia nem quando cada cliente renova. |
+| **Por que importa?** | O CEO reage a indicadores que não podem ser interpretados de forma confiável como perda de cliente. Product e CS observam métricas que, isoladamente, não permitem inferir retenção ou saúde do cliente. Os dados disponíveis não permitem determinar de forma confiável quem saiu, quanto valia a perda nem quando cada cliente renova. |
 | **O que a RavenStack deve fazer?** | Fixar uma definição canônica de churn; reconciliar as 110 contas "churned"; dar dono às 50 maiores contas; capturar datas de renovação; instrumentar o lifecycle contratual; e só então medir intervenções com um piloto controlado. |
 | **O que eu construí?** | Diagnóstico executivo; planilha com **três filas de ação nominais** (V1/V2/V3, 176 contas na primeira onda); o **Churn Truth Lab**; scripts Python reproduzíveis com testes automáticos. |
 
@@ -36,7 +36,7 @@ Cruzei as cinco tabelas da RavenStack, submeti cada achado a auditorias adversar
 
 ### Resultados / Findings
 
-**Causa raiz de gestão.** Os dados não sustentam um target confiável de perda de cliente: flags, eventos e fins de assinatura identificam populações diferentes. **Causa do cancelamento individual.** Não identificável nas cinco tabelas — uso, suporte, plano, preço, aquisição, país e indústria não separam quem sai de quem fica.
+**Causa raiz de gestão.** Os dados não sustentam um target confiável de perda de cliente: flags, eventos e fins de assinatura identificam populações diferentes. **Causa do cancelamento individual.** Não identificável nas cinco tabelas — uso, suporte, plano, preço, aquisição, país e indústria não separam de forma robusta as populações identificadas pelos sinais de churn disponíveis.
 
 **Três sinais de churn. Uma checagem de estado observável. Quatro respostas diferentes.**
 
@@ -116,7 +116,7 @@ Nenhum modelo de churn, probabilidade, health score ou lista de "contas em risco
 | 5. Lab de impacto | Cenário 0–20% sobre a exposição V3, break-even com custo informado pelo usuário, cartão do piloto |
 | 6. Confiança dos dados | Status por dimensão, prontidão para health score, semântica das assinaturas |
 
-Todo número abre SOURCE, GRAIN, COVERAGE e LIMITATION (clique no **i**). Os números vêm pré-calculados dos outputs validados em Python; o navegador só calcula o break-even sobre o custo digitado. 213/213 testes automáticos (Edge e Chrome). Screenshots em [`process-log/screenshots/truth-lab/`](process-log/screenshots/truth-lab/).
+Todo número abre SOURCE, GRAIN, COVERAGE e LIMITATION (clique no **i**). Os números vêm pré-calculados dos outputs validados em Python; o navegador só calcula o break-even sobre o custo digitado. Suíte completa: 213/213 no Edge; autoteste 101/101 no Chrome, ambos com execução offline. Screenshots em [`process-log/screenshots/truth-lab/`](process-log/screenshots/truth-lab/).
 
 ### Recomendações
 

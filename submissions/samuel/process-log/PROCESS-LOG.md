@@ -126,6 +126,27 @@ Detalhes em `TRUTH-LAB-BUILD.md`.
 | Reexecução dos 15 modelos preditivos | **54/54 valores idênticos**. A "falha" aparente da ANALYSIS-15 veio de um comando no fim do script, não da execução dos modelos |
 | Limpeza final de redação executiva | Frase do CEO, interpretação das zero contas, p = 0,955, Enterprise, atribuição de ferramenta. Nenhum número alterado |
 
+## Matriz de evidências do processo
+
+Onde cada decisão importante pode ser verificada dentro deste pacote. Caminhos relativos a `submissions/samuel/`. "Registro" = `docs/FINAL-EVIDENCE-REGISTER.md`.
+
+| Ciclo / decisão | Papel da IA | Evidência reproduzível | Validação | Decisão humana |
+|---|---|---|---|---|
+| 1. Estrutura e definição de outcomes | Mapeou grão, chaves e desfechos das 5 tabelas | `solution/outputs/independent_audit/account_outcome_definitions.csv`; `solution/outputs/final_rewrite/final_numbers.json`; Registro F-01, F-03 | 110 / 352 / 312 / 0 reproduzidos pelo auditor externo e conferidos por `final_rewrite_check.py` | Tratado como três sinais de churn + uma checagem de estado observável, não como uma taxa de churn única |
+| 2. Q4 aparentemente significativo | Encontrou IRR 1,288 (p = 0,017) e o classificou como "associação real" | `solution/outputs/independent_audit/q4_null_calibration.csv` (linha `IRR_Q4_COMPOSITION_PLUS_START_COHORT`) | — | Não aceito sem teste contra o processo gerador dos dados |
+| 3. Falsificação do Q4 | Uma segunda IA, em auditoria adversarial, notou o padrão de datas que acumula eventos no fim do período | `solution/scripts/independent_audit.py` → `q4_null_calibration.csv` e `q4_null_draws.csv` (1.000 simulações); Registro F-02 | 43,2% dos datasets sem causa dão "aumento significativo"; percentil 67; reexecução byte a byte idêntica | **Rejeitado**; errata nos documentos históricos |
+| 4. Upgrade/downgrade | Rotulou proximidade de datas como movimento de lifecycle | `solution/outputs/independent_audit/lifecycle_links_vs_chance.csv`; Registro F-05 | 23,0% observado × 24,4% em dados aleatórios | **Rótulos retirados** |
+| 5. Fila "Enterprise" | Propôs Enterprise como fila prioritária | `solution/outputs/final_rewrite/final_numbers.json` (bloco `enterprise`) | 474/500 contas têm registro Enterprise; p = 0,888 entre planos | **Removida como fila**; substituída por concentração de valor (V2) |
+| 6. "MRR encerrado" como perda | Calculou impacto sobre o MRR de registros encerrados | `solution/outputs/final_rewrite/final_numbers.json` (bloco `ended_2024`) | 100% do MRR encerrado em 2024 estava em contas ainda com registros ativos | **Mantido só como referência descritiva** |
+| 7. 409 → 388 | Usou 409 contas / 899 registros como exposição | `solution/outputs/final_rewrite/final_numbers.json`; `solution/RavenStack_CS_Action_Queues.xlsx`; Registro F-16 | 21 contas só com exposição de trial com MRR zero; planilha conferida (388 linhas na V3) | **Corrigido para 388 / 764**, com errata do F-16 |
+| 8. p ≈ 0,986 do auditor | O auditor externo reportou p ≈ 0,986 | `solution/scripts/auditor_integration.py` → `solution/outputs/auditor_integration/auditor_findings_validation.csv` (linha R2) e `reason_feedback_alignment.csv`; Registro F-20 | Reprodução: p = 0,955 em 452 feedbacks; 0,986 só com os vazios como categoria | **Só incorporado após reprodução**; mantido 0,955, conflito documentado |
+| 9. Segmentos com taxa maior | Calculou taxas observadas por segmento | `solution/outputs/auditor_integration/segment_observed_rates_final.csv`; `solution/outputs/final_rewrite/observed_segment_rates.csv` | Nenhuma dimensão com p < 0,05; todos os ICs sobrepõem a média | **Rotulado** "observed — not validated"; usado só para sobreamostragem qualitativa, **não para risk targeting** |
+| 10. Piloto 314 (157 + 157) | Desenhou o piloto; a primeira versão tinha controle contaminado | `solution/outputs/final_rewrite/final_numbers.json` (bloco `pilot`) | Validação independente apontou a sobreposição com as filas; MDE ~7,4 / 9,4 / 11,0 pp | População sem sobreposição; efeito real **só pelo piloto** |
+| 11. Truth Lab | Especificou, construiu e testou a página | `solution/scripts/build_truth_lab_data.py`; `solution/scripts/check_truth_lab.py`; `solution/outputs/truth_lab/truth_lab_checks.csv` | 213/213 no Edge; autoteste 101/101 no Chrome; offline | Previsão, health score e Revenue at Risk **bloqueados como produto**; filas como **prioridade operacional** |
+| 12. Validação final | Rodou os verificadores e a reprodução do pacote | `docs/TRUTH-LAB-VALIDATION.md` (Parte C); `solution/outputs/auditor_integration/model_rerun_comparison.csv` | 55/55, 40/40, 0 MUST FIX, 95/95; pipelines byte a byte idênticos; 54/54 valores de modelos idênticos | Entrega publicada só depois de todos os verificadores passarem |
+
+Leitura da matriz: a IA encontrou hipóteses e também as auditou; o código reproduziu os números; Samuel decidiu o que entrava ou não na entrega.
+
 ## 10. Iterações e resultado
 
 **Definição:** uma iteração é um ciclo documentado de análise → validação/auditoria → decisão/alteração. Contei só ciclos com registro escrito, não prompts individuais. Há **pelo menos 19 ciclos principais documentados** antes deste empacotamento:

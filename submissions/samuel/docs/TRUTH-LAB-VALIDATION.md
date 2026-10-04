@@ -28,6 +28,8 @@ Limitações declaradas:
 
 Interface agora em português, com números em pt-BR. As seções abaixo descrevem a validação da construção; os valores citados nelas em formato inglês foram exibidos em pt-BR a partir do fechamento.
 
+> **HISTÓRICO / SUPERSEDED:** as seções 1 a 7 abaixo documentam o estado durante a construção. O estado final validado está nas Partes B e C.
+
 Comando: `python solution/scripts/check_truth_lab.py` → **205/205 PASS**. Saídas em `solution/outputs/truth_lab/`:
 - `truth_lab_checks.csv`;
 - `selftest_dom_results.txt`;
@@ -106,16 +108,18 @@ process-log/TRUTH-LAB-BUILD.md
 - **Desktop-first.** Há um breakpoint em 1.100 px, mas não foi testado em celular.
 - **A tabela de filas** tem 11 colunas; em telas menores que ~1.600 px as últimas exigem rolagem horizontal.
 - **Os estados de revisão V1** ficam só na memória da página (não persistem ao recarregar); saem pelo CSV.
-- **Testado só em Edge (Chromium).** Firefox e Safari não foram testados.
+- **Testado só em Edge (Chromium)** na construção. No fechamento, o Chrome também foi validado (Parte B). Firefox e Safari não foram testados.
 - **A checagem de recursos do autoteste** não enxerga arquivos `file://`. O offline é provado pela varredura estática e pela execução com a rede desligada.
 - **Fontes do sistema** (Segoe UI no Windows): a aparência muda um pouco em outros sistemas.
-- **Idioma misto:** headline, subheadline e causa de gestão em português (texto do prompt); o restante em inglês.
+- **Idioma misto** na construção: headline, subheadline e causa de gestão em português (texto do prompt); o restante em inglês. No fechamento, a interface inteira passou para o português (Parte B).
 
-### 7. Screenshots a capturar (humano, para o PR)
+### 7. Screenshots planejadas na construção
 
-Referências automáticas já em `process-log/screenshots/truth-lab/`. Para o PR, capturar no navegador real:
+> **HISTÓRICO / SUPERSEDED:** lista planejada durante a construção. As screenshots finais (01 a 07) estão em `process-log/screenshots/truth-lab/` e são descritas na Parte B §9.
 
-1. Churn Truth: headline, 4 definições e UpSet.
+Plano da construção:
+
+1. Churn Truth: headline, três sinais de churn + uma checagem de estado observável, e UpSet.
 2. Painel lateral aberto num número (ex.: 2.023.778) mostrando SOURCE / GRAIN / COVERAGE / LIMITATION.
 3. Denominator com filtro INDUSTRY → DevTools e o tooltip da definição do denominador.
 4. Ranking de segmentos com o rótulo "Observed — not validated as higher risk".
@@ -247,19 +251,17 @@ Eu não executo cliques manuais. Essa confirmação humana continua com Samuel e
 - Desktop-first; mobile não testado formalmente; a tabela de filas rola na horizontal abaixo de ~1.600 px.
 - O estado de revisão V1 não persiste ao recarregar (sai pelo CSV).
 - Edge e Chrome testados; Firefox e Safari não.
-- Fontes do sistema.
-- LinkedIn e exports das conversas dependem de Samuel.
-- Os scripts estão no workspace de desenvolvimento (`solution/`), não copiados para a pasta da submissão. Decisão de empacotamento para o PR.
+- Fontes do sistema: a aparência pode mudar um pouco em outros sistemas.
 
-### 11. Prontidão para o PR
+### 11. Estado atual da submissão
 
-O pacote técnico está fechado. Para a nova auditoria independente: **READY FOR FINAL INDEPENDENT AUDIT**.
+*Atualizado após a abertura do PR. A versão anterior desta seção listava LinkedIn, exports das conversas e empacotamento dos scripts como pendências; todas foram resolvidas assim:*
 
-Para abrir o PR (não aberto) ainda faltam:
-- LinkedIn;
-- exports das conversas;
-- o QA manual de Samuel;
-- a decisão de empacotamento dos scripts.
+- LinkedIn preenchido no `README.md`.
+- Formato principal do Process Log: narrativa escrita. Screenshots e exports de conversas não são o formato escolhido.
+- Scripts em `solution/scripts/` e outputs em `solution/outputs/`, dentro do pacote `submissions/samuel/`.
+- PR #177 aberto no repositório oficial, com 104 arquivos, todos dentro de `submissions/samuel/`.
+- O checklist manual de 5 minutos (§8) continua sob responsabilidade de Samuel.
 
 ### 12. Final executive wording cleanup (FINAL-README-SYNC-01)
 

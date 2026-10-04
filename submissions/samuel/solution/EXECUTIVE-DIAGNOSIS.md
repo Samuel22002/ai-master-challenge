@@ -28,7 +28,7 @@ Os três sinais quase não se sobrepõem: flag ∩ evento = 75; flag ∩ encerra
 **Causa raiz:** os dados não sustentam um target confiável de perda de cliente. Flags de conta, eventos de churn e fins de assinatura identificam populações materialmente diferentes, enquanto as tabelas de lifecycle e comportamento também apresentam inconsistências temporais e semânticas importantes. Em duas perguntas:
 
 - **Por que o CEO vê o churn subir?** O KPI mistura eventos de grãos diferentes (flag de conta, evento, fim de assinatura) sem um lifecycle contratual reconciliado. Essa é a causa raiz do **problema de gestão**. A subida de eventos no fim de 2024 não fica acima do que a própria estrutura de datas dos registros produz (apêndice técnico).
-- **Por que um cliente individual sai?** Não é identificável nas cinco tabelas. Uso, suporte, plano, preço, seats, aquisição, país e indústria não separam quem sai de quem fica, nem combinados num modelo.
+- **Por que um cliente individual sai?** Não é identificável nas cinco tabelas. Uso, suporte, plano, preço, seats, aquisição, país e indústria não separam de forma robusta as populações identificadas pelos sinais de churn disponíveis, nem combinados num modelo.
 
 Dois achados reforçam a tese:
 

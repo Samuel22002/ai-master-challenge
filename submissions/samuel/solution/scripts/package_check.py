@@ -57,7 +57,7 @@ def links() -> None:
             dest = (f.parent / tgt).resolve()
             inside = PKG.resolve() in dest.parents or dest == PKG.resolve()
             check("links", f"{f.relative_to(PKG).as_posix()} → {tgt}", dest.exists() and inside, "missing" if not dest.exists() else "outside package")
-        bad = re.findall(r"[A-Za-z]:\\\\Users|[A-Za-z]:/Users|/home/\w+|/Users/\w+|(?<!-b )(?<!origin )submission/samuel|\.\./\.\./", text)  # branch name "submission/samuel" (official guide) is allowed
+        bad = re.findall(r"[A-Za-z]:\\\\Users|[A-Za-z]:/Users|/home/\w+|/Users/\w+|(?<!-b )(?<!origin )(?<!Samuel22002:)submission/samuel|\.\./\.\./", text)  # branch name "submission/samuel" (official guide, PR head) is allowed
         check("paths", f"no absolute/workspace path in {f.relative_to(PKG).as_posix()}", not bad, bad[:3])
     check("links", f"{n} relative links checked", n > 10, n)
 

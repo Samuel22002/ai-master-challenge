@@ -9,7 +9,7 @@ Data: 04/10/2026. Os itens marcados foram confirmados por verificação; a evid�
 - [x] Incluí o Process Log com evidência válida — narrativa escrita em `process-log/PROCESS-LOG.md` e `process-log/TRUTH-LAB-BUILD.md`.
 - [x] O README segue o template — seções, ordem, LinkedIn, challenge e data conferidos por `package_check.py`.
 - [x] Código tem instruções de setup — `solution/README.md` e `solution/requirements.txt`.
-- [x] Nenhuma mudança necessária fora da pasta — testado num repositório git temporário do template oficial: 105 arquivos staged, 0 fora de `submissions/samuel/`, 0 `.env`.
+- [x] Nenhuma mudança necessária fora da pasta — o PR #177 altera 104 arquivos, todos dentro de `submissions/samuel/`.
 
 ## Verificações adicionais
 
@@ -24,14 +24,12 @@ Data: 04/10/2026. Os itens marcados foram confirmados por verificação; a evid�
 - [x] Requirements presente — só as bibliotecas importadas, com versões fixadas.
 - [x] Dados brutos não enviados — instruções e SHA-256 em `solution/data/`.
 
-## Passos para abrir o PR (a executar por Samuel; não foram executados)
+## Registro da publicação
 
-1. Fork de `ai-master-challenge` e clone do fork.
-2. `git checkout -b submission/samuel`
-3. Copiar esta pasta para `submissions/samuel/` no clone.
-4. Apagar caches de Python, se algum script foi rodado: `find submissions/samuel -name __pycache__ -exec rm -rf {} +`
-5. Rodar `python submissions/samuel/solution/scripts/package_check.py` → deve terminar em `TOTAL n / n`.
-6. **`git add -f submissions/samuel`**. O `.gitignore` do repositório oficial contém `submissions/`, então um `git add` comum não adiciona nada. **Não** edite o `.gitignore`: isso altera um arquivo fora da sua pasta e o PR seria rejeitado.
-7. `git status` → só caminhos `submissions/samuel/...`.
-8. `git commit -m "[Submission] Samuel Santos — Challenge 001"` e `git push origin submission/samuel`.
-9. Abrir o Pull Request para `main` com o título `[Submission] Samuel Santos — Challenge 001`.
+- Fork criado na conta `Samuel22002`, a partir de `Gestao-Quatro-Ponto-Zero/ai-master-challenge`.
+- Branch da submissão criada a partir de `main` atualizada do repositório oficial.
+- Pacote em `submissions/samuel/`, adicionado com `git add -f`, porque o `.gitignore` oficial ignora `submissions/`. O `.gitignore` não foi editado.
+- Commit e push feitos para o fork.
+- **PR #177** aberto: base `main` ← head `Samuel22002:submission/samuel`, título `[Submission] Samuel Santos — Challenge 001`.
+- 104 arquivos alterados, todos dentro de `submissions/samuel/`; nenhum `.env`, `.pyc` ou `__pycache__`.
+- Ajustes posteriores entram como novos commits na mesma branch e atualizam o PR #177.
